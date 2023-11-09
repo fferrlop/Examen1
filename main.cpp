@@ -2,10 +2,31 @@
 #include <string>
 
 //Ejercicio 1: Operaciones basicas
+
 int numerosEnteros (int numero1, int numero2){
     int numeros = numero1 + numero2;
     return numeros;
 }
+
+//Ejercicio 2: Gestión de estudiantes
+
+class estudiante {
+public:
+    std::string nombre;
+    int edad;
+    std::string grado;
+
+    estudiante (std::string nombre,int edad, std::string grado) {
+        this->nombre = nombre;
+        this->edad = edad;
+        this->grado = grado;
+    }
+    void mostrarDatos() {
+        std::cout << "Nombre: " << nombre << std::endl;
+        std::cout << "Edad: " << edad << std::endl;
+        std::cout << "Grado: " << grado << std::endl;
+    }
+};
 
 int main() {
 
@@ -27,23 +48,7 @@ int main() {
 
 // Ejercicio 2: Gestión de estudiantes
 
-    class estudiante {
-        public:
-            std::string nombre;
-            int edad;
-            std::string grado;
 
-                estudiante (std::string nombre,int edad, std::string grado) {
-                    this->nombre = nombre;
-                    this->edad = edad;
-                    this->grado = grado;
-                }
-                void mostrarDatos() {
-                    std::cout << "Nombre: " << nombre << std::endl;
-                    std::cout << "Edad: " << edad << std::endl;
-                    std::cout << "Grado: " << grado << std::endl;
-                }
-    };
 
 
 return 0;
