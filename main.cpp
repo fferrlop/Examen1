@@ -70,7 +70,15 @@ int main() {
 //--------------------------------------------------------------------------------------------
 // Ejercicio 3: Optimizacion de memoria
 
+int a = 5;
+int b = 8;
 
+      std::cout << "Valor de a es: " << a << std::endl;
+      std::cout << "Valor de b es: " << b << std::endl;
+
+        intercambiarValor(&a, &b);
+
+        std::cout << "Los valores intercambiados son: " << "a = " << a << "y" << "b = " << b << std::endl;
 
 return 0;
 }
