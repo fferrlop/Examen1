@@ -65,7 +65,22 @@ int dividir (int numerador, int denominador){
 
 //Fin Ejercicio 4
 //--------------------------------------------------------------------------------------------
-//Ejercicio 5: Registro de materias
+//Ejercicio 6: Promedio del estudiante
+
+double promerdio (const std::vector <int>& calificaciones) {
+    if (calificaciones.empty()) {
+        return 0.0;
+    }
+    int suma = 0;
+        for (int calificacion : calificaciones) {
+            suma += calificacion;
+        }
+        return static_cast<double>(suma) / calificaciones.size();
+}
+
+//Fin Ejercicio 6
+//--------------------------------------------------------------------------------------------
+
 
 
 
@@ -152,10 +167,10 @@ int numerador, denominador;
 
 // Fin Ejercicio 4
 //--------------------------------------------------------------------------------------------
-
+// Ejercicio 6: Promedio del estudiante
 
 std::cout << "-----------------------------------------" << std::endl;
-std::cout << "Ejercicio 5: Registro de materias" << std::endl;
+std::cout << "Ejercicio 6: Promedio del estudiante" << std::endl;
 
 
 
