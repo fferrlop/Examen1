@@ -172,6 +172,14 @@ int numerador, denominador;
 std::cout << "-----------------------------------------" << std::endl;
 std::cout << "Ejercicio 6: Promedio del estudiante" << std::endl;
 
+    std::vector <int> calificaciones = {10, 7, 3, 8, 5, 4};
+
+    double promedio = promerdio(calificaciones);
+
+    std::cout << "El promedio de las calificaciones es:" << promedio << std::endl;
+
+//fin Ejercicio 6
+//--------------------------------------------------------------------------------------------
 
 
 return 0;
