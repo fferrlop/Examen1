@@ -110,6 +110,21 @@ int b = 8;
 //--------------------------------------------------------------------------------------------
 // Ejercicio 4: Manejo de excepciones
 
+int numerador, denominador;
+
+    std::cout << "Ingresa el numerador: ";
+    std::cin >> numerador;
+
+    std::cout << "Ingresa el denominador: ";
+    std::cin >> denominador;
+
+        try{
+            int resultado = dividir (numerador, denominador);
+            std::cout << "Resultado de la división: " << resultado << std::endl;
+
+    } catch (const std::exception& e) {
+        std::cout << "Error: " << e.what() << std::endl;
+    }
 
 return 0;
 }
