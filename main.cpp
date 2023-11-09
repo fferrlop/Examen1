@@ -87,9 +87,14 @@ class RegistroAsistencia {
         std::string fecha;
         std::string estado;
 
-        RegistroAsistencia() {
-            std::cout << "Dia de la clase: " << fecha << std::endl;
-            std::cout << "Asistencia: " << estado << std::endl;
+        RegistroAsistencia(const std::string& fecha, const std::string& estado) {
+            this->fecha = fecha;
+            this->estado = estado;
+        }
+
+        void mostrarRegistro() {
+            std::cout << "Fecha: " << fecha << std::endl;
+            std::cout << "Estado: " << estado << std::endl;
         }
 };
 
@@ -198,6 +203,15 @@ std::cout << "Ejercicio 6: Promedio del estudiante" << std::endl;
 
 std::cout << "-----------------------------------------" << std::endl;
 std::cout << "Ejercicio 7: Manejo de memoria" << std::endl;
+
+    RegistroAsistencia registro1 ("2023-11-09", "Asistio");
+    RegistroAsistencia registro2 ("2023-11-10", "No asistio");
+    RegistroAsistencia registro3 ("2023-11-11", "Tardanza");
+
+        registro1.mostrarRegistro();
+        registro2.mostrarRegistro();
+        registro3.mostrarRegistro();
+
 
 return 0;
 }
