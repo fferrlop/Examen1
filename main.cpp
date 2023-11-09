@@ -78,7 +78,7 @@ int b = 8;
 
         intercambiarValor(&a, &b);
 
-        std::cout << "Los valores intercambiados son: " << "a = " << a << "y" << "b = " << b << std::endl;
+        std::cout << "Los valores intercambiados son: " << "a = " << a << " y " << "b = " << b << std::endl;
 
 return 0;
 }
