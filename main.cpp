@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 
 //Ejercicio 1: Operaciones basicas
 
@@ -10,13 +11,14 @@ int numerosEnteros (int numero1, int numero2){
 
 //Fin Ejercicio 1
 //--------------------------------------------------------------------------------------------
-//Ejercicio 2: Gestión de estudiantes
+//Ejercicio 2/5: Gestión de estudiantes/Registro de materias
 
 class estudiante {
 public:
     std::string nombre;
     int edad;
     std::string grado;
+    std::vector<std::string> materias; //Ejercicio 5
 
     estudiante (std::string nombre,int edad, std::string grado) {
         this->nombre = nombre;
@@ -28,6 +30,17 @@ public:
         std::cout << "Edad: " << edad << std::endl;
         std::cout << "Grado: " << grado << std::endl;
     }
+
+    void agregarMateria(std::string materia) { //Ejercicio 5
+        materias.push_back(materia);
+    }
+
+    void enseñarMateria() {
+        for (int i = 0; i < materias.size(); i++) {
+            std::cout << materias[i] << std::endl;
+        }
+    }
+
 };
 
 //Fin Ejercicio 2
@@ -53,6 +66,8 @@ int dividir (int numerador, int denominador){
 
 //Fin Ejercicio 4
 //--------------------------------------------------------------------------------------------
+//Ejercicio 5: Registro de materias
+
 
 
 
@@ -110,6 +125,9 @@ int b = 8;
 //--------------------------------------------------------------------------------------------
 // Ejercicio 4: Manejo de excepciones
 
+std::cout << "-----------------------------------------" << std::endl;
+std::cout << "Ejercicio 4: Manejo de excepciones" << std::endl;
+
 int numerador, denominador;
 
     std::cout << "Ingresa el numerador: ";
@@ -125,6 +143,15 @@ int numerador, denominador;
     } catch (const std::exception& e) {
         std::cout << "Error: " << e.what() << std::endl;
     }
+
+// Fin Ejercicio 4
+//--------------------------------------------------------------------------------------------
+// Ejercicio 5: Registro de materias
+
+std::cout << "-----------------------------------------" << std::endl;
+std::cout << "Ejercicio 5: Registro de materias" << std::endl;
+
+
 
 return 0;
 }
