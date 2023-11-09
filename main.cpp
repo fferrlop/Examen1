@@ -1,11 +1,16 @@
 #include <iostream>
+#include <string>
 
+//Ejercicio 1: Operaciones basicas
 int numerosEnteros (int numero1, int numero2){
     int numeros = numero1 + numero2;
     return numeros;
 }
 
 int main() {
+
+// Ejercicio 1: Operaciones basicas
+
     int numero1, numero2;
 
         std::cout << "Ingresa numero 1: ";
@@ -18,5 +23,9 @@ int main() {
 
         std::cout << "la suma de los dos numeros enteros " << numero1 << " + " << numero2 << " = " << numeros << std::endl;
 
-    return 0;
+// Fin Ejercicio 1
+
+
+
+return 0;
 }
