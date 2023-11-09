@@ -16,4 +16,10 @@ Preguntas tipo test:
 
 3. En C++, las variables pueden referirse a datos o direcciones de memoria. En relación a esto, ¿qué son los punteros en la programación C++?
 
-  b. Variables que almacenan la dirección de otra variable
+   b. Variables que almacenan la dirección de otra variable
+
+
+   Preguntas de desarrollo
+
+
+
