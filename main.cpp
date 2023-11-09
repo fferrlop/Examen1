@@ -48,6 +48,9 @@ int main() {
 
 // Ejercicio 2: Gestión de estudiantes
 
+    estudiante estudiante1 ("Francisco", 20, "Primero");
+
+    estudiante1.mostrarDatos();
 
 
 
