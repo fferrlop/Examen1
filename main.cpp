@@ -16,7 +16,7 @@ int main() {
 
         int numeros = numerosEnteros(numero1, numero2);
 
-        std::cout << "la suma de los dos numeros enteros " << numero1 << "+" << numero2 << " = " << numeros << std::endl;
+        std::cout << "la suma de los dos numeros enteros " << numero1 << " + " << numero2 << " = " << numeros << std::endl;
 
     return 0;
 }
