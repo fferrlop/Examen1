@@ -42,6 +42,23 @@ void intercambiarValor (int* puntero1, int* puntero2){
 
 //Fin Ejercicio 3
 //--------------------------------------------------------------------------------------------
+//Ejercicio 4: Manejo de excepciones
+
+int dividir (int numerador, int denominador){
+    if (denominador == 0){
+        throw "Indivisible entre 0";
+    }
+    return numerador / denominador;
+}
+
+//Fin Ejercicio 4
+//--------------------------------------------------------------------------------------------
+
+
+
+
+
+
 int main() {
 
 // Ejercicio 1: Operaciones basicas
@@ -88,6 +105,11 @@ int b = 8;
         intercambiarValor(&a, &b);
 
         std::cout << "Los valores intercambiados son: " << "a = " << a << " y " << "b = " << b << std::endl;
+
+// Fin Ejercicio 3
+//--------------------------------------------------------------------------------------------
+// Ejercicio 4: Manejo de excepciones
+
 
 return 0;
 }
