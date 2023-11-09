@@ -100,7 +100,17 @@ class RegistroAsistencia {
 
 // Fin Ejercicio 7
 //--------------------------------------------------------------------------------------------
+// Ejercicio 8: Filtrado de estudiantes por grado
 
+std::vector <estudiante> filtrarEstudiantes (const std::vector <estudiante>& estudiantes, const std::string& grado) {
+    std::vector <estudiante> estudiantesFiltrados;
+    for (const estudiante& estudiante : estudiantes) {
+        if (estudiante.grado == grado) {
+            estudiantesFiltrados.push_back(estudiante);
+        }
+    }
+    return estudiantesFiltrados;
+}
 
 
 
@@ -211,6 +221,12 @@ std::cout << "Ejercicio 7: Manejo de memoria" << std::endl;
         registro1.mostrarRegistro();
         registro2.mostrarRegistro();
         registro3.mostrarRegistro();
+
+// Fin Ejercicio 7
+//--------------------------------------------------------------------------------------------
+// Ejercicio 8: Filtrado de estudiantes por grado
+
+
 
 
 return 0;
