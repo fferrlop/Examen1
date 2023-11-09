@@ -8,6 +8,8 @@ int numerosEnteros (int numero1, int numero2){
     return numeros;
 }
 
+//Fin Ejercicio 1
+//--------------------------------------------------------------------------------------------
 //Ejercicio 2: Gestión de estudiantes
 
 class estudiante {
@@ -28,6 +30,18 @@ public:
     }
 };
 
+//Fin Ejercicio 2
+//--------------------------------------------------------------------------------------------
+//Ejercicio 3: Optimizacion de memoria
+
+void intercambiarValor (int* puntero1, int* puntero2){
+    int temp = *puntero1;
+    *puntero1 = *puntero2;
+    *puntero2 = temp;
+}
+
+//Fin Ejercicio 3
+//--------------------------------------------------------------------------------------------
 int main() {
 
 // Ejercicio 1: Operaciones basicas
@@ -45,12 +59,16 @@ int main() {
         std::cout << "la suma de los dos numeros enteros " << numero1 << " + " << numero2 << " = " << numeros << std::endl;
 
 // Fin Ejercicio 1
-
+//--------------------------------------------------------------------------------------------
 // Ejercicio 2: Gestión de estudiantes
 
     estudiante estudiante1 ("Francisco", 20, "Primero");
 
     estudiante1.mostrarDatos();
+
+// Fin Ejercicio 2
+//--------------------------------------------------------------------------------------------
+// Ejercicio 3: Optimizacion de memoria
 
 
 
