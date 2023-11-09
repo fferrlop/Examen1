@@ -226,7 +226,24 @@ std::cout << "Ejercicio 7: Manejo de memoria" << std::endl;
 //--------------------------------------------------------------------------------------------
 // Ejercicio 8: Filtrado de estudiantes por grado
 
+std::cout << "-----------------------------------------" << std::endl;
+std::cout << "Ejercicio 8: Filtrado de estudiantes por grado";
 
+    std::vector <estudiante> listaEstudiantes;
+
+        listaEstudiantes.push_back(estudiante("Francisco", 20, "Primero"));
+        listaEstudiantes.push_back(estudiante("Miguel", 21, "Segundo"));
+        listaEstudiantes.push_back(estudiante("Juan", 22, "Tercero"));
+        listaEstudiantes.push_back(estudiante("Pedro", 23, "Cuarto"));
+
+            std::string gradoFiltrar = "Segundo";
+
+            std::vector <estudiante> estudiantesFiltrados = filtrarEstudiantes(listaEstudiantes, gradoFiltrar);
+
+            std::cout << "Estudiantes de " << gradoFiltrar << std::endl;
+            for (const estudiante& estudiante : estudiantesFiltrados) {
+                std::cout <<"Nombre: " << estudiante.nombre << std::endl;
+            }
 
 
 return 0;
