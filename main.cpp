@@ -14,32 +14,32 @@ int numerosEnteros (int numero1, int numero2){
 //Ejercicio 2/5: Gestión de estudiantes/Registro de materias
 
 class estudiante {
-public:
-    std::string nombre;
-    int edad;
-    std::string grado;
-    std::vector<std::string> materias; //Ejercicio 5
+    public:
+        std::string nombre;
+        int edad;
+        std::string grado;
+        std::vector<std::string> materias; //Ejercicio 5
 
-    estudiante (std::string nombre,int edad, std::string grado) {
-        this->nombre = nombre;
-        this->edad = edad;
-        this->grado = grado;
-    }
-    void mostrarDatos() {
-        std::cout << "Nombre: " << nombre << std::endl;
-        std::cout << "Edad: " << edad << std::endl;
-        std::cout << "Grado: " << grado << std::endl;
-    }
-
-    void agregarMateria(std::string materia) { //Ejercicio 5
-        materias.push_back(materia);
-    }
-
-    void enseñarMateria() {
-        for (int i = 0; i < materias.size(); i++) {
-            std::cout << materias[i] << std::endl;
+        estudiante (std::string nombre,int edad, std::string grado) {
+            this->nombre = nombre;
+            this->edad = edad;
+            this->grado = grado;
         }
-    }
+        void mostrarDatos() {
+            std::cout << "Nombre: " << nombre << std::endl;
+            std::cout << "Edad: " << edad << std::endl;
+            std::cout << "Grado: " << grado << std::endl;
+        }
+
+        void agregarMateria(std::string materia) { //Ejercicio 5
+            materias.push_back(materia);
+        }
+
+        void enseñarMateria() {
+            for (int i = 0; i < materias.size(); i++) {
+                std::cout << materias[i] << std::endl;
+            }
+        }
 };
 
 //Fin Ejercicio 2/5
@@ -78,9 +78,23 @@ double promerdio (const std::vector <int>& calificaciones) {
         return static_cast<double>(suma) / calificaciones.size();
 }
 
-//Fin Ejercicio 6
+// Fin Ejercicio 6
 //--------------------------------------------------------------------------------------------
+// Ejercicio 7: Manejo de memoria
 
+class RegistroAsistencia {
+    public:
+        std::string fecha;
+        std::string estado;
+
+        RegistroAsistencia() {
+            std::cout << "Dia de la clase: " << fecha << std::endl;
+            std::cout << "Asistencia: " << estado << std::endl;
+        }
+};
+
+// Fin Ejercicio 7
+//--------------------------------------------------------------------------------------------
 
 
 
@@ -178,9 +192,12 @@ std::cout << "Ejercicio 6: Promedio del estudiante" << std::endl;
 
     std::cout << "El promedio de las calificaciones es:" << promedio << std::endl;
 
-//fin Ejercicio 6
+// Fin Ejercicio 6
 //--------------------------------------------------------------------------------------------
+// Ejercicio 7: Manejo de memoria
 
+std::cout << "-----------------------------------------" << std::endl;
+std::cout << "Ejercicio 7: Manejo de memoria" << std::endl;
 
 return 0;
 }
