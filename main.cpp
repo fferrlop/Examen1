@@ -25,6 +25,25 @@ int main() {
 
 // Fin Ejercicio 1
 
+// Ejercicio 2: Gestión de estudiantes
+
+    class estudiante {
+        public:
+            std::string nombre;
+            int edad;
+            std::string grado;
+
+                estudiante (std::string nombre,int edad, std::string grado) {
+                    this->nombre = nombre;
+                    this->edad = edad;
+                    this->grado = grado;
+                }
+                void mostrarDatos() {
+                    std::cout << "Nombre: " << nombre << std::endl;
+                    std::cout << "Edad: " << edad << std::endl;
+                    std::cout << "Grado: " << grado << std::endl;
+                }
+    };
 
 
 return 0;
