@@ -46,6 +46,9 @@ int main() {
 
 // Ejercicio 1: Operaciones basicas
 
+std::cout << "-----------------------------------------" << std::endl;
+std::cout << "Ejercicio 1: Operaciones basicas" << std::endl;
+
     int numero1, numero2;
 
         std::cout << "Ingresa numero 1: ";
@@ -62,6 +65,9 @@ int main() {
 //--------------------------------------------------------------------------------------------
 // Ejercicio 2: Gestión de estudiantes
 
+std::cout << "-----------------------------------------" << std::endl;
+std::cout << "Ejercicio 2: Gestion de estudiantes" << std::endl;
+
     estudiante estudiante1 ("Francisco", 20, "Primero");
 
     estudiante1.mostrarDatos();
@@ -69,6 +75,9 @@ int main() {
 // Fin Ejercicio 2
 //--------------------------------------------------------------------------------------------
 // Ejercicio 3: Optimizacion de memoria
+
+std::cout << "-----------------------------------------" << std::endl;
+std::cout << "Ejercicio 3: Optimizacion de memoria" << std::endl;
 
 int a = 5;
 int b = 8;
