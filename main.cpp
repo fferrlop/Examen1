@@ -1,6 +1,8 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    int numerosEnteros (int numero1, int numero2){
+        int numeros = numero1, numero2;
+        return numeros;
+    }
 }
