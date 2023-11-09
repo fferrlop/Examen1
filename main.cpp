@@ -40,10 +40,9 @@ public:
             std::cout << materias[i] << std::endl;
         }
     }
-
 };
 
-//Fin Ejercicio 2
+//Fin Ejercicio 2/5
 //--------------------------------------------------------------------------------------------
 //Ejercicio 3: Optimizacion de memoria
 
@@ -95,16 +94,23 @@ std::cout << "Ejercicio 1: Operaciones basicas" << std::endl;
 
 // Fin Ejercicio 1
 //--------------------------------------------------------------------------------------------
-// Ejercicio 2: Gestión de estudiantes
+//Ejercicio 2/5: Gestión de estudiantes/Registro de materias
 
 std::cout << "-----------------------------------------" << std::endl;
-std::cout << "Ejercicio 2: Gestion de estudiantes" << std::endl;
+std::cout << "Ejercicio 2/5: Gestión de estudiantes/Registro de materias" << std::endl;
 
     estudiante estudiante1 ("Francisco", 20, "Primero");
 
-    estudiante1.mostrarDatos();
+    //Ejercicio 5
+    estudiante1.agregarMateria("Matematicas");
+    estudiante1.agregarMateria("Programacon");
+    estudiante1.agregarMateria("Fisica");
 
-// Fin Ejercicio 2
+
+            estudiante1.mostrarDatos();
+            estudiante1.enseñarMateria();
+
+// Fin Ejercicio 2/5
 //--------------------------------------------------------------------------------------------
 // Ejercicio 3: Optimizacion de memoria
 
@@ -146,7 +152,7 @@ int numerador, denominador;
 
 // Fin Ejercicio 4
 //--------------------------------------------------------------------------------------------
-// Ejercicio 5: Registro de materias
+
 
 std::cout << "-----------------------------------------" << std::endl;
 std::cout << "Ejercicio 5: Registro de materias" << std::endl;
