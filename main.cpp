@@ -112,7 +112,9 @@ std::vector <estudiante> filtrarEstudiantes (const std::vector <estudiante>& est
     return estudiantesFiltrados;
 }
 
-
+// Fin Ejercicio 8
+//--------------------------------------------------------------------------------------------
+// Ejercicio 9: Gestion de excepciones personalizadas
 
 
 
@@ -244,6 +246,15 @@ std::cout << "Ejercicio 8: Filtrado de estudiantes por grado";
             for (const estudiante& estudiante : estudiantesFiltrados) {
                 std::cout <<"Nombre: " << estudiante.nombre << std::endl;
             }
+
+// Fin Ejercicio 8
+//--------------------------------------------------------------------------------------------
+// Ejercicio 9: Gestion de excepciones personalizadas
+
+std::cout << "-----------------------------------------" << std::endl;
+std::cout << "Ejercicio 9: Gestion de excepciones personalizadas";
+
+
 
 
 return 0;
